@@ -1,0 +1,8 @@
+fr\aston\poec\jakarta\model\JpaUtils.class
+fr\aston\poec\jakarta\dao\impls\TravailleurDao.class
+fr\aston\poec\jakarta\model\Adresse.class
+fr\aston\poec\jakarta\model\GlobalEntity.class
+fr\aston\poec\jakarta\model\Travailleur.class
+fr\aston\poec\jakarta\model\Geo.class
+fr\aston\poec\jakarta\idao\ITravailleur.class
+fr\aston\poec\jakarta\model\Entreprise.class

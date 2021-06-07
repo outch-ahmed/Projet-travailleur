@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.aston.poec.jakarta</groupId>
+	<artifactId>global</artifactId>
+	<version>1</version>
+	<packaging>pom</packaging>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<sonar.login>85c843c0f72512d91ea3153714844dccc05cafb7</sonar.login>
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+
+		<sonar.scm.disabled>true</sonar.scm.disabled>
+		<sonar.sourceEncoding>${project.build.sourceEncoding}</sonar.sourceEncoding>
+		<sonar.language>java</sonar.language>
+		<sonar.java.source>${maven.compiler.source}</sonar.java.source>
+		<sonar.tests>src/test/java</sonar.tests>
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<sonar.junit.reportPaths>${basedir}/target/surefire-reports</sonar.junit.reportPaths>
+		<sonar.jacoco.reportPaths>${basedir}/target/jacoco.exec</sonar.jacoco.reportPaths>
+	</properties>
+	<modules>
+		<module>ws-rest</module>
+		<module>Mod_DAO</module>
+	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-api</artifactId>
+			<version>8.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.20</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>
